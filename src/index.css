@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 8% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 8% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 6% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 64%;
+
+    --accent: 92 100% 60%;
+    --accent-foreground: 240 10% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 18%;
+    --input: 240 6% 18%;
+    --ring: 270 100% 50%;
+
+    --radius: 0.75rem;
+    
+    --neon-purple: 270 100% 50%;
+    --neon-green: 92 100% 60%;
+    --gradient-primary: linear-gradient(135deg, hsl(270 100% 50%), hsl(92 100% 60%));
+    --glow-purple: 0 0 20px hsl(270 100% 50% / 0.5), 0 0 40px hsl(270 100% 50% / 0.3);
+    --glow-green: 0 0 20px hsl(92 100% 60% / 0.5), 0 0 40px hsl(92 100% 60% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .neon-glow-purple {
+    box-shadow: var(--glow-purple);
+  }
+  
+  .neon-glow-green {
+    box-shadow: var(--glow-green);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+}
