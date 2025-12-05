@@ -318,10 +318,10 @@ const Home = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button variant="neon" size="xl" asChild className="text-lg px-8">
-                <NavLink to="/pricing">
+                <a href="tel:+18335395474">
                   <Play className="mr-2 h-6 w-6" />
-                  Start Watching Now
-                </NavLink>
+                  Call: (833) 539-5474
+                </a>
               </Button>
               <Button variant="outline-glow" size="xl" asChild className="text-lg px-8">
                 <NavLink to="/contact">

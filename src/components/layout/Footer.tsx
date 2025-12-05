@@ -122,8 +122,12 @@ const Footer = () => {
             </ul>
             <div className="space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-accent" />
+                <a href="tel:+18335395474" className="hover:text-accent transition-colors">(833) 539-5474</a>
+              </div>
+              <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-accent" />
-                <span>support@televoostream.com</span>
+                <a href="mailto:support@televoostream.com" className="hover:text-accent transition-colors">support@televoostream.com</a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-accent" />

@@ -359,15 +359,15 @@ const Products = () => {
               Get in touch with our team to find the perfect products for your streaming setup
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <NavLink to="/contact">
-                <Button size="lg">
-                  Contact Us
+              <Button size="lg" asChild>
+                <a href="tel:+18335395474">
+                  Call: (833) 539-5474
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </NavLink>
-              <NavLink to="/pricing">
+                </a>
+              </Button>
+              <NavLink to="/contact">
                 <Button size="lg" variant="outline">
-                  View Pricing
+                  Contact Us
                 </Button>
               </NavLink>
             </div>

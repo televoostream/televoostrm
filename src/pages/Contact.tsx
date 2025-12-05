@@ -69,9 +69,9 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      title: "Phone Support",
-      content: "24/7 Support Available",
-      description: "Contact us via email for phone support",
+      title: "Call Us",
+      content: "(833) 539-5474",
+      description: "Available 24/7 for your support",
     },
     {
       icon: Clock,
@@ -168,6 +168,9 @@ const Contact = () => {
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
+                  <Button asChild variant="outline" size="lg" className="w-full">
+                    <a href="tel:+18335395474">Call Us: (833) 539-5474</a>
+                  </Button>
                 </form>
               </CardContent>
             </Card>
@@ -203,9 +206,14 @@ const Contact = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Request a free demo and experience the quality of TelevooStream firsthand. No credit card required!
             </p>
-            <Button variant="neon" size="lg">
-              Request Free Demo
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button variant="neon" size="lg" asChild>
+                <a href="tel:+18335395474">Call: (833) 539-5474</a>
+              </Button>
+              <Button variant="outline" size="lg">
+                Request Free Demo
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>

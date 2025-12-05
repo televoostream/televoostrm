@@ -65,7 +65,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="neon" size="lg" asChild>
-              <NavLink to="/pricing">Start Watching</NavLink>
+              <a href="tel:+18335395474">(833) 539-5474</a>
             </Button>
           </div>
 
@@ -96,9 +96,7 @@ const Header = () => {
                 </NavLink>
               ))}
               <Button variant="neon" size="lg" className="mt-4" asChild>
-                <NavLink to="/pricing" onClick={() => setIsMobileMenuOpen(false)}>
-                  Start Watching
-                </NavLink>
+                <a href="tel:+18335395474">(833) 539-5474</a>
               </Button>
             </nav>
           </div>
