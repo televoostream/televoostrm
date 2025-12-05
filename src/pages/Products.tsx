@@ -6,12 +6,12 @@ import { NavLink } from "@/components/NavLink";
 const Products = () => {
   const productCategories = [
     {
-      id: "roku-tv",
-      name: "Roku TV",
+      id: "smart-tv",
+      name: "Smart TV",
       icon: MonitorPlay,
-      description: "Smart TVs with built-in Roku streaming",
+      description: "Smart TVs with built-in streaming capabilities",
       image: "https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fundefined%2F0d343cb7-585a-43d9-9996-7c470bc76356.png",
-      features: ["4K Ultra HD", "HDR10+", "Roku OS Built-in", "Thousands of Channels"],
+      features: ["4K Ultra HD", "HDR10+", "Built-in OS", "Thousands of Channels"],
     },
     {
       id: "smart-home",
@@ -189,14 +189,14 @@ const Products = () => {
             </div>
           </div>
 
-          {/* Roku TV Section - Unique Layout 2 (Reversed) */}
+          {/* Smart TV Section - Unique Layout 2 (Reversed) */}
           <div className="mb-32 max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative lg:order-1 animate-fade-in">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/30">
                   <img
                     src="https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fundefined%2F0d343cb7-585a-43d9-9996-7c470bc76356.png"
-                    alt="Roku TV"
+                    alt="Smart TV"
                     className="w-full h-auto"
                   />
                   <div className="absolute inset-0 bg-gradient-to-tl from-primary/20 to-transparent" />
@@ -204,7 +204,7 @@ const Products = () => {
                 {/* Floating Badge */}
                 <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl bg-primary text-primary-foreground shadow-neon-blue">
                   <div className="text-3xl font-bold">Smart</div>
-                  <div className="text-xs">Roku OS</div>
+                  <div className="text-xs">TV Pro</div>
                 </div>
               </div>
               <div className="space-y-6 lg:order-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -213,14 +213,14 @@ const Products = () => {
                   <span className="text-sm font-bold text-primary">Smart TV</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-display font-bold">
-                  Roku TV Excellence
+                  Smart TV Excellence
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Discover smart TVs powered by Roku OS. Access thousands of streaming channels, 
+                  Discover premium smart TVs with built-in streaming. Access thousands of streaming channels, 
                   voice control, and stunning 4K HDR picture quality all in one sleek package.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 pt-4">
-                  {["Roku OS Built-in", "Voice Remote", "HDR10+", "Free Live TV"].map((feature) => (
+                  {["Smart OS Built-in", "Voice Remote", "HDR10+", "Free Live TV"].map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
                         <div className="w-2 h-2 rounded-full bg-primary" />

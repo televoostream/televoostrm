@@ -371,18 +371,18 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {/* Roku TV */}
+            {/* Smart TV */}
             <NavLink to="/products">
               <Card className="group cursor-pointer bg-transparent border-none hover:scale-105 transition-all duration-300 animate-fade-in">
                 <CardContent className="p-8 flex flex-col items-center text-center space-y-4">
                   <div className="w-40 h-40 rounded-2xl bg-[#2a1b3d] flex items-center justify-center group-hover:bg-[#3a2b4d] transition-colors">
                     <img
                       src="https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fundefined%2F0d343cb7-585a-43d9-9996-7c470bc76356.png"
-                      alt="Roku TV"
+                      alt="Smart TV"
                       className="w-28 h-28 object-contain rounded-lg"
                     />
                   </div>
-                  <h3 className="text-xl font-semibold text-white">Roku TV</h3>
+                  <h3 className="text-xl font-semibold text-white">Smart TV</h3>
                 </CardContent>
               </Card>
             </NavLink>
@@ -485,7 +485,7 @@ const Home = () => {
                     {/* Bottom Info */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                       <h3 className="text-2xl font-display font-bold text-white mb-2">Big Screen Experience</h3>
-                      <p className="text-gray-300 text-sm">4K streaming on Smart TVs, Fire Stick, Apple TV, Roku & more</p>
+                      <p className="text-gray-300 text-sm">4K streaming on Smart TVs, Fire Stick, Apple TV, and more devices</p>
                     </div>
                   </CardContent>
                 </Card>
